@@ -76,8 +76,10 @@
 
 import React from "react";
 import PropTypes from "prop-types";
-import { Button } from "@material-tailwind/react";
+import { Button} from "@material-tailwind/react";
 import { Link } from "react-router-dom";
+
+
 
 const Book = ({ book }) => {
   const {
@@ -102,18 +104,6 @@ const Book = ({ book }) => {
         </figure>
         <div className="card-body">
           <div className="space-x-3">
-            
-            {/* <Button className="bg-[#17BE0A0D] text-[#23BE0A] font-medium">
-              {tags[0]}
-            </Button>
-            <Button className="bg-[#17BE0A0D] text-[#23BE0A] font-medium">
-              {tags[1]}
-               {tags?.map((tag,index) => (
-            <Button key={index} className="bg-[#17BE0A0D] text-[#23BE0A] font-medium">
-              {tag}
-            </Button>
-          ))}
-            </Button> */}
 
             {tags?.map((tag, index) => (
               <Button
