@@ -22,8 +22,6 @@ function NavList() {
   return (
     <List className="mt-4 items-center mb-6 gap-4 lg:gap-2 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1">
       <Typography
-        as="a"
-        href="#"
         variant="small"
         color="blue-gray"
         className="font-medium"
@@ -41,8 +39,6 @@ function NavList() {
       </Typography>
 
       <Typography
-        as="a"
-        href="#"
         variant="small"
         color="blue-gray"
         className="font-medium"
@@ -60,8 +56,6 @@ function NavList() {
       </Typography>
 
       <Typography
-        as="a"
-        href="#"
         variant="small"
         color="blue-gray"
         className="font-medium"
@@ -79,8 +73,6 @@ function NavList() {
       </Typography>
 
       <Typography
-        as="a"
-        href="#"
         variant="small"
         color="blue-gray"
         className="font-medium"
@@ -98,8 +90,6 @@ function NavList() {
       </Typography>
 
       <Typography
-        as="a"
-        href="#"
         variant="small"
         color="blue-gray"
         className="font-medium"
@@ -134,9 +124,7 @@ const NavBar = () => {
       <Navbar className="mx-auto max-w-7xl shadow-none px-4 py-4">
         <div className="flex items-center justify-between text-blue-gray-900">
           <Typography
-            as="a"
-            href="#"
-            variant="h6"
+            variant="h2"
             className="mr-4 cursor-pointer py-1.5 lg:ml-2"
           >
             BookHaven
