@@ -6,6 +6,7 @@ import ListedBooks from "../pages/ListedBooks/ListedBooks";
 import PagesToRead from "../pages/PagesToRead/PagesToRead";
 import Authors from "../pages/Authors/Authors";
 import AboutUs from "../pages/AboutUs/AboutUs";
+import BookDetails from "../pages/BookDetails/BookDetails";
 
 export const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ export const router = createBrowserRouter([
       {
         path: "/about-us",
         element: <AboutUs />,
+      },
+      {
+        path: "/book-details/:bookId",
+        element: <BookDetails />,
       },
     ],
   },

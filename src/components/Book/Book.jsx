@@ -95,7 +95,7 @@ const Book = ({ book }) => {
   } = book || {};
 
   return (
-    <Link to={""}>
+    <Link to={`/book-details/${bookId}`}>
       <div className="card  bg-base-100 shadow-xl p-6">
         <figure className="bg-[#F3F3F3]">
           <img src={image} alt="Book image" className="block " />
