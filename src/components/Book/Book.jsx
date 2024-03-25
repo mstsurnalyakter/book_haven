@@ -102,12 +102,27 @@ const Book = ({ book }) => {
         </figure>
         <div className="card-body">
           <div className="space-x-3">
-            <Button className="bg-[#17BE0A0D] text-[#23BE0A] font-medium">
+            
+            {/* <Button className="bg-[#17BE0A0D] text-[#23BE0A] font-medium">
               {tags[0]}
             </Button>
             <Button className="bg-[#17BE0A0D] text-[#23BE0A] font-medium">
               {tags[1]}
+               {tags?.map((tag,index) => (
+            <Button key={index} className="bg-[#17BE0A0D] text-[#23BE0A] font-medium">
+              {tag}
             </Button>
+          ))}
+            </Button> */}
+
+            {tags?.map((tag, index) => (
+              <Button
+                key={index}
+                className="bg-[#17BE0A0D] text-[#23BE0A] font-medium"
+              >
+                {tag}
+              </Button>
+            ))}
           </div>
           <h2 className="card-title">{bookName}</h2>
           <p>If a dog chews shoes whose shoes does he choose?</p>
