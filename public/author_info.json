@@ -1,0 +1,81 @@
+{
+  "authors": [
+    {
+      "authorName": "F. Scott Fitzgerald",
+      "authorImage": "f_scott_fitzgerald.jpg",
+      "bio": "F. Scott Fitzgerald (1896–1940) was an American novelist and short story writer...",
+      "bibliography": ["The Great Gatsby", "Tender Is the Night", "This Side of Paradise", "..."],
+      "interviews": ["Interview with F. Scott Fitzgerald - The Paris Review", "..."]
+    },
+    {
+      "authorName": "George Orwell",
+      "authorImage": "george_orwell.jpg",
+      "bio": "George Orwell (1903–1950) was an English novelist, essayist, journalist, and critic...",
+      "bibliography": ["1984", "Animal Farm", "Homage to Catalonia", "..."],
+      "interviews": ["George Orwell: The Politics of Literary Reputation - BBC News", "..."]
+    },
+    {
+      "authorName": "Harper Lee",
+      "authorImage": "harper_lee.jpg",
+      "bio": "Harper Lee (1926–2016) was an American novelist widely known for her novel To Kill a Mockingbird...",
+      "bibliography": ["To Kill a Mockingbird", "..."],
+      "interviews": ["Harper Lee: American Masters - PBS", "..."]
+    },
+    {
+      "authorName": "J.D. Salinger",
+      "authorImage": "jd_salinger.jpg",
+      "bio": "J.D. Salinger (1919–2010) was an American novelist best known for his novel The Catcher in the Rye...",
+      "bibliography": ["The Catcher in the Rye", "Franny and Zooey", "Nine Stories", "..."],
+      "interviews": ["J.D. Salinger: The Last Interview - The Guardian", "..."]
+    },
+    {
+      "authorName": "J.K. Rowling",
+      "authorImage": "jk_rowling.jpg",
+      "bio": "J.K. Rowling (born 1965) is a British author, philanthropist, and screenwriter best known for creating the Harry Potter series...",
+      "bibliography": ["Harry Potter and the Philosopher's Stone", "..."],
+      "interviews": ["J.K. Rowling: A Year in the Life - BBC", "..."]
+    },
+    {
+      "authorName": "Jane Austen",
+      "authorImage": "jane_austen.jpg",
+      "bio": "Jane Austen (1775–1817) was an English novelist known primarily for her six major novels...",
+      "bibliography": ["Pride and Prejudice", "Sense and Sensibility", "Emma", "..."],
+      "interviews": ["Jane Austen: A Life Revealed - The Guardian", "..."]
+    },
+    {
+      "authorName": "J.R.R. Tolkien",
+      "authorImage": "jrr_tolkien.jpg",
+      "bio": "J.R.R. Tolkien (1892–1973) was an English writer, poet, philologist, and academic...",
+      "bibliography": ["The Lord of the Rings", "The Hobbit", "The Silmarillion", "..."],
+      "interviews": ["J.R.R. Tolkien: An Interview - The Paris Review", "..."]
+    },
+    {
+      "authorName": "Fyodor Dostoevsky",
+      "authorImage": "fyodor_dostoevsky.jpg",
+      "bio": "Fyodor Dostoevsky (1821–1881) was a Russian novelist, philosopher, and short story writer...",
+      "bibliography": ["Crime and Punishment", "The Brothers Karamazov", "Notes from Underground", "..."],
+      "interviews": ["Fyodor Dostoevsky: A Documentary - YouTube", "..."]
+    },
+    {
+      "authorName": "Dan Brown",
+      "authorImage": "dan_brown.jpg",
+      "bio": "Dan Brown (born 1964) is an American author best known for his thriller novels...",
+      "bibliography": ["The Da Vinci Code", "Angels & Demons", "Inferno", "..."],
+      "interviews": ["Dan Brown: Author Interview - Barnes & Noble", "..."]
+    },
+    {
+      "authorName": "Paulo Coelho",
+      "authorImage": "paulo_coelho.jpg",
+      "bio": "Paulo Coelho (born 1947) is a Brazilian author known for his philosophical novels...",
+      "bibliography": ["The Alchemist", "Brida", "The Valkyries", "..."],
+      "interviews": ["Paulo Coelho: Interview - The New York Times", "..."]
+    },
+    {
+      "authorName": "Gillian Flynn",
+      "authorImage": "gillian_flynn.jpg",
+      "bio": "Gillian Flynn (born 1971) is an American author, screenwriter, and comic book writer...",
+      "bibliography": ["Gone Girl", "Sharp Objects", "Dark Places", "..."],
+      "interviews": ["Gillian Flynn: The Thriller's Author Interview - The Guardian", "..."]
+    }
+  ]
+}
