@@ -120,7 +120,7 @@ const NavBar = () => {
   }, []);
 
   return (
-    <div className="shadow-lg sticky top-0">
+    <div className="shadow-lg sticky top-0 z-50">
       <Navbar className="mx-auto max-w-7xl shadow-none px-4 py-4">
         <div className="flex items-center justify-between text-blue-gray-900">
           <Typography

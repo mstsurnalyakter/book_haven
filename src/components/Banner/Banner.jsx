@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Banner = () => {
   return (
-    <div className="hero bg-[#1313130D] min-h-[550px] rounded-3xl">
+    <div className="hero bg-[#1313130D] mb-20 min-h-[550px] rounded-3xl">
       <div className="hero-content flex-col lg:flex-row-reverse">
         <img src="/the_da_vinci_code.png" className="max-w-sm rounded-lg " />
         <div className="max-w-xl">
