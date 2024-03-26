@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'
 import {
   Card,
   CardHeader,
@@ -12,21 +12,20 @@ import { IoPeopleOutline } from "react-icons/io5";
 import { HiOutlineDocumentChartBar } from "react-icons/hi2";
 import { Link } from 'react-router-dom';
 
-const ReadBook = ({book}) => {
-     const {
-      bookId,
-       bookName,
-       author,
-       image,
-       review,
-       totalPages,
-       rating,
-       category,
-       tags,
-       publisher,
-       yearOfPublishing,
-     } = book || {};
- 
+const WishlistBook = ({ book }) => {
+    const {
+        bookId,
+      bookName,
+      author,
+      image,
+      totalPages,
+      rating,
+      category,
+      tags,
+      publisher,
+      yearOfPublishing,
+    } = book || {};
+    console.log(book);
   return (
     <Card className="flex-row shadow mx-auto w-full p-6 rounded-2xl border-2 border-[#13131326] h-96">
       <CardHeader
@@ -99,10 +98,10 @@ const ReadBook = ({book}) => {
       </CardBody>
     </Card>
   );
-}
+};
 
-ReadBook.propTypes = {
+WishlistBook.propTypes = {
   book:PropTypes.object.isRequired
-}
+};
 
-export default ReadBook
+export default WishlistBook

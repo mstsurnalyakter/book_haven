@@ -6,7 +6,7 @@ import ReadBook from '../ReadBook/ReadBook';
 const ReadBooks = () => {
     const { readBookData, loading } = useLocalStorage
     ();
-    console.log(readBookData, loading);
+ 
   return (
     <div className='grid grid-cols-1 gap-6 w-full'>
       {readBookData.map((book) => (
