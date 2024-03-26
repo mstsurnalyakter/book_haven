@@ -1,5 +1,3 @@
-import React from 'react'
-import PropTypes from 'prop-types'
 import useAuthorData from '../../Hooks/useAuthorData';
 import AuthorCard from '../AuthorCard/AuthorCard';
 

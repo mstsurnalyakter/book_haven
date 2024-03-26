@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react'
-import PropTypes from 'prop-types'
+import  { useEffect, useState } from 'react'
 import useBooksData from '../../Hooks/useBooksData'
 import { useParams } from 'react-router';
 

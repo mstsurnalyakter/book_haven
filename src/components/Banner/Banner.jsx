@@ -1,5 +1,3 @@
-import React from 'react'
-import PropTypes from 'prop-types'
 import { Button } from '@material-tailwind/react';
 import { Link } from 'react-router-dom';
 
@@ -12,7 +10,7 @@ const Banner = () => {
           <h1 className="text-5xl font-bold text-[#131313] leading-[60px] mb-10">
             Books to freshen up your bookshelf
           </h1>
-          <Link>
+          <Link to={"/listed-books"}>
             <Button className="bg-[#23BE0A] text-white" size="md">
               View The List
             </Button>

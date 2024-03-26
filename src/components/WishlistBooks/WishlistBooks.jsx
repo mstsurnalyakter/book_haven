@@ -1,21 +1,21 @@
-import React from 'react'
 import PropTypes from 'prop-types'
-import useLocalStorage from '../../Hooks/useLocalStorage';
 import WishlistBook from '../WishlistBook/WishlistBook';
 
 
-const WishlistBooks = () => {
-    const { wishlistBookData, loading } = useLocalStorage();
-    console.log(wishlistBookData);
+const WishlistBooks = ({ sortedWishlistBooks }) => {
+
   return (
     <div className="grid grid-cols-1 gap-6 w-full">
-      {wishlistBookData.map((book) => (
+      {sortedWishlistBooks.map((book) => (
         <WishlistBook book={book} key={book.bookId} />
       ))}
     </div>
   );
-}
+};
 
-WishlistBooks.propTypes = {}
+
+WishlistBooks.propTypes = {
+  sortedWishlistBooks:PropTypes.array.isRequired
+};
 
 export default WishlistBooks

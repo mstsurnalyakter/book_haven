@@ -1,5 +1,3 @@
-import React from 'react'
-import PropTypes from 'prop-types'
 import useBooksData from '../../Hooks/useBooksData';
 import Book from '../Book/Book';
 

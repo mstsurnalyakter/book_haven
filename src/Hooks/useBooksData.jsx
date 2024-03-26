@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import PropTypes from "prop-types";
+import  { useEffect, useState } from "react";
+
 
 const useBooksData = () => {
   const [books, setBooks] = useState([]);
@@ -25,10 +25,9 @@ const useBooksData = () => {
     loadBooksData();
   }, []);
 
-  
+
   return { books, loading };
 };
 
-useBooksData.propTypes = {};
 
 export default useBooksData;

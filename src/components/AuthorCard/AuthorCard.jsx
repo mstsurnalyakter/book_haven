@@ -1,9 +1,8 @@
-import React from 'react'
 import PropTypes from 'prop-types'
 
 const AuthorCard = ({ author }) => {
-    const { authorName, authorImage, bio, bibliography, interviews } = author || {};
-    console.log(author);
+    const { authorName, authorImage, bio } = author || {};
+
   return (
     <div className="flex flex-col justify-center mx-auto   p-6 shadow-md rounded-xl sm:px-12">
       <img
@@ -84,6 +83,8 @@ const AuthorCard = ({ author }) => {
   );
 };
 
-AuthorCard.propTypes = {}
+AuthorCard.propTypes = {
+  author:PropTypes.object.isRequired
+};
 
 export default AuthorCard

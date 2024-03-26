@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import PropTypes from "prop-types";
+import  { useEffect, useState } from "react";
+
 
 const useAuthorData = () => {
   const [authors, setAuthors] = useState([]);
@@ -31,4 +31,3 @@ const useAuthorData = () => {
 useAuthorData.propTypes = {};
 
 export default useAuthorData;
-

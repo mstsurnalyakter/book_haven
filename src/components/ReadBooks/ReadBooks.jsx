@@ -1,21 +1,20 @@
-import React from 'react'
 import PropTypes from 'prop-types'
-import useLocalStorage from '../../Hooks/useLocalStorage';
 import ReadBook from '../ReadBook/ReadBook';
 
-const ReadBooks = () => {
-    const { readBookData, loading } = useLocalStorage
-    ();
- 
+
+const ReadBooks = ({ sortedBooks }) => {
+
   return (
-    <div className='grid grid-cols-1 gap-6 w-full'>
-      {readBookData.map((book) => (
+    <div className="grid grid-cols-1 gap-6 w-full">
+      {sortedBooks.map((book) => (
         <ReadBook key={book.bookId} book={book} />
       ))}
     </div>
   );
-}
+};
 
-ReadBooks.propTypes = {}
+ReadBooks.propTypes = {
+  sortedBooks:PropTypes.array.isRequired
+};
 
-export default ReadBooks
+export default ReadBooks;

@@ -1,4 +1,3 @@
-import React from 'react'
 import PropTypes from 'prop-types';
 import {
   Card,
@@ -26,7 +25,7 @@ const ReadBook = ({book}) => {
        publisher,
        yearOfPublishing,
      } = book || {};
- 
+
   return (
     <Card className="flex-row shadow mx-auto w-full p-6 rounded-2xl border-2 border-[#13131326] h-96">
       <CardHeader
