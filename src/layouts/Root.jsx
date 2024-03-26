@@ -9,7 +9,7 @@ const Root = () => {
   return (
     <div className="work-sans">
       <NavBar />
-      <div className="mx-auto max-w-7xl px-4 mt-10 mb-10">
+      <div className="mx-auto max-w-7xl px-6 mt-10 mb-10">
         <Outlet />
       </div>
       <Footer />
