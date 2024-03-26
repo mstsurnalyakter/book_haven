@@ -99,6 +99,10 @@ const BookDetails = () => {
           <b>{publisher}</b>
         </p>
         <p className="flex items-center mb-2 gap-14">
+          <span> Year of Publishing:</span>
+          <b>{yearOfPublishing}</b>
+        </p>
+        <p className="flex items-center mb-2 gap-14">
           <span>Rating:</span>
           <b>{rating}</b>
         </p>
