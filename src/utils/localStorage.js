@@ -10,7 +10,21 @@ const getWishlistBookIdFromLs = () => {
   return wishlistBookId ? JSON.parse(wishlistBookId) : [];
 };
 
-const saveBookIdToLS = (id) => {
+const saveReadBookIdToLS = (id) => {
+   const getReadBookId = getReadBookIdFromLS();
+   const isExitReadId = getReadBookId.find((readBookId) => readBookId === id);
+
+  if (isExitReadId) {
+    toast.error("You have Already Read this Book!");
+  } else {
+     getReadBookId.push(id);
+     localStorage.setItem("readBookId", JSON.stringify(getReadBookId));
+     toast.success("Book added to Read List Successfully!");
+  }
+
+};
+
+const saveWishlistBookIdToLS = (id) => {
   const getReadBookId = getReadBookIdFromLS();
   const getWishlistBook = getWishlistBookIdFromLs();
   const isExitReadId = getReadBookId.find((readBookId) => readBookId === id);
@@ -18,13 +32,6 @@ const saveBookIdToLS = (id) => {
     (wishlistBookId) => wishlistBookId === id
   );
 
-  if (isExitReadId) {
-    toast.error("You have Already Read this Book!");
-  } else {
-    getReadBookId.push(id);
-    localStorage.setItem("readBookId", JSON.stringify(getReadBookId));
-    toast.success("Book added to Read List Successfully!");
-  }
 
   if (isExitWishlistId) {
     toast.error("You have Already Added this Book to Wishlist!");
@@ -33,10 +40,16 @@ const saveBookIdToLS = (id) => {
       toast.error("You have Already Read this Book!");
     } else {
       getWishlistBook.push(id);
-      localStorage.setItem("readBookId", JSON.stringify(getWishlistBook));
+      localStorage.setItem("wishlistBookId", JSON.stringify(getWishlistBook));
       toast.success("Book added to Wishlist Successfully!");
     }
   }
 };
 
-export { getReadBookIdFromLS, getWishlistBookIdFromLs, saveBookIdToLS };
+
+export {
+  getReadBookIdFromLS,
+  getWishlistBookIdFromLs,
+  saveReadBookIdToLS,
+  saveWishlistBookIdToLS,
+};

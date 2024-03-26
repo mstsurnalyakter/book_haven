@@ -10,6 +10,7 @@ import {
   Typography,
   Button,
 } from "@material-tailwind/react";
+import {  saveReadBookIdToLS, saveWishlistBookIdToLS } from '../../utils/localStorage';
 
 
 const BookDetails = () => {
@@ -24,6 +25,13 @@ const BookDetails = () => {
         setBook(findBook)
     },[books,id]);
 
+    const handleReadBook = () =>{
+      saveReadBookIdToLS(id);
+    }
+    const handleWishlistBook = () => {
+      saveWishlistBookIdToLS(id);
+    };
+
      const {
        bookName,
        author,
@@ -36,8 +44,7 @@ const BookDetails = () => {
        publisher,
        yearOfPublishing,
      } = book || {};
-    console.log(book);
-    console.log(tags);
+
   return (
     <Card className="flex-row shadow-none">
       <CardHeader
@@ -97,11 +104,19 @@ const BookDetails = () => {
           <b>{rating}</b>
         </p>
 
-        <div className="hidden gap-2 lg:flex">
-          <Button className="bg-[#23BE0A] text-white" size="md">
+        <div className="gap-2 flex">
+          <Button
+            onClick={handleReadBook}
+            className="hover:bg-[#23BE0A] hover:text-white border-2 text-[#23BE0A] bg-white capitalize"
+            size="md"
+          >
             Read
           </Button>
-          <Button className="bg-[#59C6D2] text-white" size="md">
+          <Button
+            onClick={handleWishlistBook}
+            className="bg-[#59C6D2] text-white capitalize"
+            size="md"
+          >
             Wishlist
           </Button>
         </div>

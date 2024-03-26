@@ -7,9 +7,9 @@ import { ToastContainer } from 'react-toastify';
 
 const Root = () => {
   return (
-    <div>
+    <div className="work-sans">
       <NavBar />
-      <div className="mx-auto max-w-7xl px-4 mt-10">
+      <div className="mx-auto max-w-7xl px-4 mt-10 mb-10">
         <Outlet />
       </div>
       <Footer />

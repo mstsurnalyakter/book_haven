@@ -24,8 +24,18 @@ const useLocalStorage = () => {
 
     },[books])
 
+    // useEffect(()=>{
+    //     const getWishlistBookId = getWishlistBookIdFromLs();
+    //     const filterWishlistBooks = books.filter((book) =>
+    //       getWishlistBookId.includes(book.bookId)
+    //     );
+    //     setWishlistBookData(filterWishlistBooks)
+
+    // },[books])
+
   return {readBookData,wishlistBookData, loading} ;
 }
+
 
 useLocalStorage.propTypes = {}
 
