@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import { Button} from "@material-tailwind/react";
 import { Link } from "react-router-dom";
+import { FaRegStar } from "react-icons/fa";
 
 
 
@@ -10,24 +11,19 @@ const Book = ({ book }) => {
     bookName,
     author,
     image,
-    review,
-    totalPages,
     rating,
     category,
     tags,
-    publisher,
-    yearOfPublishing,
   } = book || {};
 
   return (
     <Link to={`/book-details/${bookId}`}>
       <div className="card  bg-base-100 shadow-xl p-6">
-        <figure className="bg-[#F3F3F3]">
+        <figure className="bg-[#F3F3F3] mb-6">
           <img src={image} alt="Book image" className="block " />
         </figure>
-        <div className="card-body">
+        <div className="space-y-4">
           <div className="space-x-3">
-
             {tags?.map((tag, index) => (
               <Button
                 key={index}
@@ -37,10 +33,17 @@ const Book = ({ book }) => {
               </Button>
             ))}
           </div>
-          <h2 className="card-title">{bookName}</h2>
-          <p>If a dog chews shoes whose shoes does he choose?</p>
-          <div className="card-actions justify-end">
-            <button className="btn btn-primary">Buy Now</button>
+          <h2 className="card-title playfair-display text-xl font-bold text-[#131313]">
+            {bookName}
+          </h2>
+          <p>By: {author}</p>
+          <div className="border-b-2 border-dashed border-[#13131326] mb-6"></div>
+          <div className="flex justify-between items-center">
+            <span>{category}</span>
+            <p className="flex items-center gap-1">
+              {rating}
+              <FaRegStar />
+            </p>
           </div>
         </div>
       </div>

@@ -58,13 +58,11 @@ const BookDetails = () => {
         />
       </CardHeader>
       <CardBody>
-        <Typography
-          variant="h4"
-          color="blue-gray"
-          className="mb-4 text-[#131313]"
+        <h2
+          className="mb-4 font-bold text-4xl text-[#131313] #131313 playfair-display"
         >
           {bookName}
-        </Typography>
+        </h2>
         <Typography variant="h6" className="mb-6">
           By : {author}
         </Typography>
@@ -75,7 +73,7 @@ const BookDetails = () => {
         </Typography>
         <div className="border-b-2 border-[#13131326] mb-6"></div>
         <Typography variant="small" className="mb-6">
-          <b>Review:</b> {review}
+          <b className="font-bold">Review:</b> {review}
         </Typography>
         <div className="space-x-3 mb-6">
           <b>Tag</b>

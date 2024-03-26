@@ -17,7 +17,6 @@ const ReadBook = ({book}) => {
        bookName,
        author,
        image,
-       review,
        totalPages,
        rating,
        category,
@@ -36,13 +35,11 @@ const ReadBook = ({book}) => {
         <img src={image} alt="book-image" className="" />
       </CardHeader>
       <CardBody className="w-full">
-        <Typography
-          variant="h4"
-          color="blue-gray"
-          className="mb-4 text-[#131313]"
+        <h2
+          className="mb-4 playfair-display font-bold text-[24px] text-[#131313]"
         >
           {bookName}
-        </Typography>
+        </h2>
         <Typography variant="h6" className="mb-6">
           By : {author}
         </Typography>

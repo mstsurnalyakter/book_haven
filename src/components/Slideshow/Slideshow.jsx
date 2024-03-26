@@ -17,14 +17,14 @@ const Slideshow = () => {
 
   return (
     <div className="mb-10">
-      <div className=" relative hero bg-[#1313130D] mb-20 min-h-[350px] rounded-3xl">
+      <div className=" relative hero  bg-[#1313130D] mb-20 min-h-[350px] rounded-3xl">
         {" "}
         {books.map((book, index) => (
           <div
             key={index}
             className={`slide ${
               currentElement === index ? "active" : ""
-            } hero-content flex-col lg:flex-row-reverse`}
+            } hero-content flex-col lg:flex-row-reverse gap-20`}
             style={{
               position: "absolute",
               opacity: currentElement === index ? 1 : 0,
@@ -34,9 +34,11 @@ const Slideshow = () => {
             <img
               src={book.image}
               alt={book.bookName}
-              style={{ width: "100%", height: "auto" }}
+              style={{ width: "200px", height: "300px" }}
             />
-            <h2>{book.bookName}</h2>
+            <h2 className="font-bold text-lg playfair-display">
+              {book.bookName}
+            </h2>
           </div>
         ))}
       </div>
