@@ -31,3 +31,4 @@ const useAuthorData = () => {
 useAuthorData.propTypes = {};
 
 export default useAuthorData;
+
