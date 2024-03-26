@@ -29,5 +29,4 @@ const useBooksData = () => {
   return { books, loading };
 };
 
-
 export default useBooksData;

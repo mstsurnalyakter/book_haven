@@ -24,12 +24,11 @@ const useLocalStorage = () => {
 
     },[books])
 
- 
+
 
   return {readBookData,wishlistBookData, loading} ;
 }
 
 
-useLocalStorage.propTypes = {}
 
 export default useLocalStorage
