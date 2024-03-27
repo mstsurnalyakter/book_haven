@@ -15,7 +15,7 @@ const Footer = () => {
             className="flex justify-center space-x-3 lg:justify-start"
           >
             <span className="self-center text-2xl font-semibold">
-              BookHaven
+              BookHaven 📚
             </span>
           </a>
         </div>
@@ -140,7 +140,7 @@ const Footer = () => {
       <div className="py-6 text-sm text-center dark:text-gray-600">
         <p>
           Copyright © {new Date().getFullYear()} - All right reserved by
-          BookHaven
+          BookHaven 📚
         </p>
       </div>
     </footer>

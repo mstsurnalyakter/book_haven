@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types';
 
 import {
   Navbar,
@@ -98,7 +97,7 @@ const NavBar = () => {
             variant="h2"
             className="mr-4 cursor-pointer py-1.5 lg:ml-2"
           >
-            BookHaven
+            BookHaven 📚
           </Typography>
           <div className="hidden lg:block">
             <NavList />
