@@ -4,7 +4,7 @@ Welcome to BookHaven, your ultimate destination for all things books!
 
 ## Live Site
 
-[Visit BookHaven](https://www.bookhaven.com)
+[Visit BookHaven](https://bookhaven-website.netlify.app/)
 
 ## Features and Characteristics
 
