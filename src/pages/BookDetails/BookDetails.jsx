@@ -45,37 +45,31 @@ const BookDetails = () => {
      } = book || {};
 
   return (
-    <Card className="flex-row shadow-none">
+    <Card className="lg:flex-row flex-col w-full shadow-none">
       <CardHeader
         shadow={false}
         floated={false}
-        className="m-0 w-2/5 shrink-0 bg-[#1313130D] p-10 rounded-r-none"
+        className="m-0 lg:w-2/5 w-full hero  shrink-0 bg-[#1313130D] p-10 rounded-r-none"
       >
-        <img
-          src={image}
-          alt="book-image"
-          className="h-full w-full object-cover"
-        />
+        <img src={image} alt="book-image" className="lg:w-full object-cover" />
       </CardHeader>
-      <CardBody>
-        <h2
-          className="mb-4 font-bold text-4xl text-[#131313] #131313 playfair-display"
-        >
+      <CardBody className="space-y-7">
+        <h2 className="font-bold text-4xl text-[#131313] #131313 playfair-display">
           {bookName}
         </h2>
-        <Typography variant="h6" className="mb-6">
+        <Typography variant="h6" className="">
           By : {author}
         </Typography>
-        <div className="border-b-2 border-[#13131326] mb-4"></div>
+        <div className="border-b-2 border-[#13131326]"></div>
         <Typography variant="h6" className="mb-4">
           {" "}
           {category}
         </Typography>
-        <div className="border-b-2 border-[#13131326] mb-6"></div>
-        <Typography variant="small" className="mb-6">
+        <div className="border-b-2 border-[#13131326]"></div>
+        <Typography variant="small" className="">
           <b className="font-bold">Review:</b> {review}
         </Typography>
-        <div className="space-x-3 mb-6">
+        <div className="space-x-3 ">
           <b>Tag</b>
           {tags?.map((tag, index) => (
             <Button
@@ -87,20 +81,20 @@ const BookDetails = () => {
           ))}
         </div>
 
-        <div className="border-b-2 border-[#13131326] mb-6"></div>
-        <p className="flex items-center mb-2 gap-14">
+        <div className="border-b-2 border-[#13131326] "></div>
+        <p className="flex items-center gap-14">
           <span>Number of Page:</span>
           <b>{totalPages}</b>
         </p>
-        <p className="flex items-center mb-2 gap-14">
+        <p className="flex items-center gap-14">
           <span> Published:</span>
           <b>{publisher}</b>
         </p>
-        <p className="flex items-center mb-2 gap-14">
+        <p className="flex items-center gap-14">
           <span> Year of Publishing:</span>
           <b>{yearOfPublishing}</b>
         </p>
-        <p className="flex items-center mb-2 gap-14">
+        <p className="flex items-center gap-14">
           <span>Rating:</span>
           <b>{rating}</b>
         </p>

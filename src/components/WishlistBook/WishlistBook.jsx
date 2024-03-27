@@ -26,12 +26,12 @@ const WishlistBook = ({ book }) => {
     } = book || {};
     console.log(book);
   return (
-    <div className=''>
-      <Card className="shadow mx-auto w-full p-6 rounded-2xl border-2 border-[#13131326] h-96">
+    <div className="">
+      <Card className="lg:flex-row flex-col  shadow mx-auto w-full p-5 rounded-2xl border-2 border-[#13131326]">
         <CardHeader
           shadow={false}
           floated={false}
-          className="m-0 w-2/5 shrink-0 bg-[#1313130D] p-10 rounded-2xl flex items-center justify-center"
+          className="m-0 lg:w-2/5 w-full hero shrink-0 bg-[#1313130D] p-10 rounded-2xl flex items-center justify-center"
         >
           <img src={image} alt="book-image" className="" />
         </CardHeader>
@@ -43,7 +43,7 @@ const WishlistBook = ({ book }) => {
             By : {author}
           </Typography>
 
-          <div className="space-x-3 mb-6 flex items-center">
+          {/* <div className="lg:space-x-3 space-x-2mb-6 flex items-center">
             <b>Tag</b>
             {tags?.map((tag, index) => (
               <Button
@@ -57,7 +57,25 @@ const WishlistBook = ({ book }) => {
               <CiLocationOn />
               <span>Year of Publishing: {yearOfPublishing}</span>
             </div>
+          </div> */}
+          <div className="gap-3 mb-6 flex flex-col md:flex-row md:items-center">
+            <div className="flex items-center gap-2">
+              <b>Tag</b>
+              {tags?.map((tag, index) => (
+                <Button
+                  key={index}
+                  className="bg-[#17BE0A0D] text-[#23BE0A] font-medium rounded-[30px]"
+                >
+                  #{tag}
+                </Button>
+              ))}
+            </div>
+            <div className="flex items-center gap-2">
+              <CiLocationOn />
+              <span>Year of Publishing: {yearOfPublishing}</span>
+            </div>
           </div>
+
           <div className="space-x-3 mb-6 flex items-center">
             <p className="flex items-center gap-2">
               <IoPeopleOutline />

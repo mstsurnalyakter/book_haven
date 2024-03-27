@@ -17,7 +17,7 @@ const Slideshow = () => {
 
   return (
     <div className="mb-10">
-      <div className=" relative hero  bg-[#1313130D] mb-20 min-h-[350px] rounded-3xl">
+      <div className=" relative hero  bg-[#1313130D] mb-20 min-h-[450px] lg:min-h-[400px] rounded-3xl">
         {" "}
         {books.map((book, index) => (
           <div
@@ -36,7 +36,7 @@ const Slideshow = () => {
               alt={book.bookName}
               style={{ width: "200px", height: "300px" }}
             />
-            <h2 className="font-bold text-lg playfair-display">
+            <h2 className="font-bold text-2xl playfair-display">
               {book.bookName}
             </h2>
           </div>
