@@ -43,21 +43,6 @@ const WishlistBook = ({ book }) => {
             By : {author}
           </Typography>
 
-          {/* <div className="lg:space-x-3 space-x-2mb-6 flex items-center">
-            <b>Tag</b>
-            {tags?.map((tag, index) => (
-              <Button
-                key={index}
-                className="bg-[#17BE0A0D] text-[#23BE0A] font-medium rounded-[30px]"
-              >
-                #{tag}
-              </Button>
-            ))}
-            <div className="flex items-center gap-2">
-              <CiLocationOn />
-              <span>Year of Publishing: {yearOfPublishing}</span>
-            </div>
-          </div> */}
           <div className="gap-3 mb-6 flex flex-col md:flex-row md:items-center">
             <div className="flex items-center gap-2">
               <b>Tag</b>
@@ -97,7 +82,7 @@ const WishlistBook = ({ book }) => {
               Category: {category}
             </Button>
             <Button
-              className="bg-[#328EFF26] rounded-[30px] text-[#328EFF] border-2  capitalize"
+              className="bg-[#FFAC3326] rounded-[30px] text-[#FFAC33] border-2  capitalize"
               size="md"
             >
               Rating: {rating}

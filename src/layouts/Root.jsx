@@ -6,12 +6,14 @@ import { ToastContainer } from 'react-toastify';
 
 const Root = () => {
   return (
-    <div className="work-sans">
+    <div className="work-sansl ">
       <NavBar />
-      <div className="mx-auto max-w-7xl px-6 mt-10 mb-10">
+      <div className="mx-auto max-w-7xl px-6 mt-10 mb-10 min-h-[calc(100vh-366px)]">
         <Outlet />
       </div>
-      <Footer />
+      <div className="">
+        <Footer />
+      </div>
       <ToastContainer />
     </div>
   );
