@@ -60,8 +60,7 @@ Make sure you have the following installed:
     npm install
 ```
 
-
-3.Run the client:
+3. Run the client:
 
 ```sh
     npm run dev
