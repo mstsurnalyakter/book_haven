@@ -49,10 +49,10 @@ Make sure you have the following installed:
 
 1. Clone repository:
 
-    ```sh
+ ```sh
     git clone https://github.com/mstsurnalyakter/book_haven
     cd book_haven
-    ```
+```
 
 2. Install client dependencies:
 
@@ -61,7 +61,7 @@ Make sure you have the following installed:
 ```
 
 
-### Run the client:
+3.Run the client:
 
 ```sh
     npm run dev
