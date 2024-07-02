@@ -49,7 +49,7 @@ Make sure you have the following installed:
 
 1. Clone repository:
 
- ```sh
+```sh
     git clone https://github.com/mstsurnalyakter/book_haven
     cd book_haven
 ```
