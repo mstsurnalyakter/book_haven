@@ -6,6 +6,12 @@ Welcome to BookHaven, your ultimate destination for all things books!
 
 [Visit BookHaven](https://bookhaven-website.netlify.app/)
 
+
+## Overview
+
+BookHaven is a platform where you can explore a curated collection of books, learn about authors, and manage your reading lists. Discover new reads, find favorite authors, and organize your reading journey—all in one place.
+
+
 ## Features and Characteristics
 
 - **Home**:
@@ -28,3 +34,35 @@ Welcome to BookHaven, your ultimate destination for all things books!
 
 - **Pages to Read**:
   - Pages to Read contains Custom Shape Bar Chart.
+
+
+## Getting Started
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+- Node.js
+- npm or yarn
+
+### Installation
+
+1. Clone repository:
+
+    ```sh
+    git clone https://github.com/mstsurnalyakter/book_haven
+    cd book_haven
+    ```
+
+2. Install client dependencies:
+
+```sh
+    npm install
+```
+
+
+### Run the client:
+
+```sh
+    npm run dev
+```
